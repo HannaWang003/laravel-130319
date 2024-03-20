@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PigController extends Controller
+class CatsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('pigs.index');
+        return view('cats.index');
     }
 
     /**
@@ -19,7 +19,7 @@ class PigController extends Controller
      */
     public function create()
     {
-        //
+        return view('cats.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class PigController extends Controller
      */
     public function show(string $id)
     {
-        return view('pigs.show');
+        //
     }
 
     /**
@@ -43,7 +43,7 @@ class PigController extends Controller
      */
     public function edit(string $id)
     {
-        return view('pigs.edit');
+        //
     }
 
     /**
@@ -60,5 +60,9 @@ class PigController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+    public function excel()
+    {
+        return view('cats.excel');
     }
 }

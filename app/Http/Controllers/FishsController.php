@@ -11,7 +11,7 @@ class FishsController extends Controller
      */
     public function index()
     {
-        dd('fish resource');
+        return view('fishs.index');
     }
 
     /**
