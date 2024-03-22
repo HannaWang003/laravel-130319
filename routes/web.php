@@ -8,7 +8,8 @@ use App\Http\Controllers\FishsController;
 use App\Http\Controllers\CatsController;
 
 Route::get('/', function () {
-    return view('welcome', ['name' => 'Hanna']);
+    return redirect('/cats');
+    // return view('welcome', ['name' => 'Hanna']);
 });
 
 Route::get('/hello', function () {
@@ -25,4 +26,4 @@ Route::resource('fishs', FishsController::class);
 
 //cat
 Route::resource('cats', CatsController::class);
-Route::get('/catsexcel', [CatsController::class, 'excel'])->name('cats.excel');
+Route::get('/cats_excel', [CatsController::class, 'excel'])->name('cats/excel');

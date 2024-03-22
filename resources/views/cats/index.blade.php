@@ -7,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CAT</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css' />
+    {{-- <link rel="stylesheet" href="http://mylaravel0318.localhost/css/style.css"> --}}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body>
     <div class="container">
+        <h1>Hello Cat</h1>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="container-fluid">
                 <ul class="navbar-nav">
@@ -28,7 +31,7 @@
         <p>The .table-dark class adds a black background to the table:</p>
         <div class="text-end">
             <button class="btn btn-outline-secondary"><a href="{{ route('cats.create') }}">Add</a></button>
-            <button class="btn btn-outline-info"><a href="{{ route('cats.excel') }}">Excel</a></button>
+            <button class="btn btn-outline-info"><a href="{{ route('cats/excel') }}">Excel</a></button>
         </div>
         <table class="table table-warning">
             <thead>

@@ -11,6 +11,7 @@ class CatsController extends Controller
      */
     public function index()
     {
+        // dd(route('cats.index', ['id' => 1, 'sh' => 0]));
         return view('cats.index');
     }
 
@@ -19,6 +20,7 @@ class CatsController extends Controller
      */
     public function create()
     {
+        // dd('hello cate create');
         return view('cats.create');
     }
 
