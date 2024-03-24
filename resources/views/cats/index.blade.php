@@ -31,7 +31,7 @@
         <p>The .table-dark class adds a black background to the table:</p>
         <div class="text-end">
             <button class="btn btn-outline-secondary"><a href="{{ route('cats.create') }}">Add</a></button>
-            <button class="btn btn-outline-info"><a href="{{ route('cats/excel') }}">Excel</a></button>
+            <button class="btn btn-outline-info"><a href="{{ route('cats.excel') }}">Excel</a></button>
         </div>
         <table class="table table-warning">
             <thead>

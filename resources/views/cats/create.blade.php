@@ -27,6 +27,7 @@
         <h1>CATs Create</h1>
         <p>The .table-dark class adds a black background to the table:</p>
         <form action="{{ route('cats.store') }}" method="post">
+            @csrf
             <div class="row">
                 <div class="col">name</div>
             </div>

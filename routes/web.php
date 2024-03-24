@@ -26,4 +26,4 @@ Route::resource('fishs', FishsController::class);
 
 //cat
 Route::resource('cats', CatsController::class);
-Route::get('/cats_excel', [CatsController::class, 'excel'])->name('cats/excel');
+Route::get('/cats_excel', [CatsController::class, 'excel'])->name('cats.excel');
