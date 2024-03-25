@@ -8,7 +8,7 @@ use App\Http\Controllers\FishsController;
 use App\Http\Controllers\CatsController;
 
 Route::get('/', function () {
-    return redirect('/cats');
+    return view('child');
     // return view('welcome', ['name' => 'Hanna']);
 });
 
